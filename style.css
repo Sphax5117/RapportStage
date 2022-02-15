@@ -1,0 +1,423 @@
+body{
+    margin: 0;
+}
+
+.header {
+    overflow: hidden;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger{
+    display: none;
+}
+
+.sous{
+    display: none;
+}
+
+
+@media (max-width: 900px) {
+    .burger{
+        display: flex;
+        justify-content: flex-end;
+        width: 50px;
+        height: auto;
+        color: #1c1c80;
+    }
+
+
+    .header-right{
+        display: none;
+    }
+}
+
+.logo{
+    width: 170px;
+    height: auto;
+    margin-top: 15px;
+}
+
+
+.header a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: auto 10px;
+    font-family: Verdana, sans-serif;
+}
+
+  
+
+
+.bannerimage {
+    width: 100%;
+    filter: brightness(85%);
+    background-image: url(images/banner3.png);
+    height: 300px;
+    background-size: cover;
+}
+
+.stage{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    margin: auto;
+    padding: 100px;
+}
+
+.bannerhr{
+    color: white;
+    background-color: white;
+    width: 150px;
+    height: 5px;
+    position:relative;bottom:100px;
+}
+
+.intropara{
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    padding: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section-title{
+   padding-left: 75px;
+   margin: auto;
+   height: 55px;
+}
+
+
+#histoire{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin: auto;
+}
+
+.titlehr{
+    height: 5px;
+    width: 50px;
+    color: black;
+    background-color: black;
+    float: left;
+    margin-bottom: 0;
+}
+
+.story{
+    width: 700px;
+    margin-top: 20px;
+    padding-left: 75px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box{
+    width: 150px;
+    height: auto;
+    margin: auto 30px;
+    display: inline-block;
+}
+
+span{
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding-top: 50px;
+    font-size: 22px;
+}
+
+.circle{
+    background-color: #2fca64;
+    color: #2fca64;
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    margin-left: 15px;
+}
+
+.description{
+    width: 150px;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.history{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.quotebox{
+    width: 100%;
+    height: 273px;
+    background-color: #1c1c80;
+    height: 300px;
+    background-size: cover;
+
+}
+
+.quotetext{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    padding-top: 120px;
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+}
+
+#metier{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: auto;
+}
+
+.fichemetier{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    margin-left: 45px;
+}
+
+.fichemetier2{
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 35px;
+}
+
+
+.jobTitle{
+    padding-top: 35px;
+    font-weight: lighter;
+    width: 200px;
+}
+
+.jobDescription{
+    width: 575px;
+}
+
+.cqBox{
+    height: 200px;
+}
+
+.cq{
+    display: inline-block;
+    padding-right: 100px;
+    width: auto;
+}
+
+
+
+.jobImage{
+    border-radius: 10px;
+    width: 600px;
+    height: auto;    
+}
+
+.jobImage2{
+    border-radius: 5%;
+    width: 600px;
+    height: auto;
+
+}
+
+.alltext{
+    margin-left: 20px;
+}
+
+ul {
+    list-style: none;
+  }
+  
+.cqBox li::before {
+    content: "\2022";
+    color: #2fca64;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  #projets{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: auto;
+}
+
+.imgGrid{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: auto auto auto; 
+    column-gap: 50px;
+    row-gap: 30px;
+    margin-left: 75px;
+    margin-top: 50px;
+}
+
+.imgSize{
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+}
+
+
+.projectbox{
+    position: relative;
+}
+
+.projecthr{
+    color: white;
+    background-color: white;
+    width: 22px;
+    height: 1px;
+    position: absolute; bottom: 140px; left: 160px;
+}
+
+.projtext{
+    color: white;
+    position: absolute; bottom: 140px; left: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+}
+
+#contact{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: auto;
+}
+
+.infoGrid{
+    display: grid;
+    grid-template-columns: 490px 490px ;
+    grid-template-rows: 50px 50px; 
+    column-gap: 150px;
+    row-gap: 50px;
+    margin-bottom: 60px;
+}
+
+.infoflex{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 75px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}
+
+.message{
+    margin-left: 75px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+textarea{
+    width: 1130px;
+    height: 200px;
+    resize: none;
+    border:2px solid #1c1c80;
+    border-radius: 5px;
+}
+
+textarea:focus{
+    width: 1130px;
+    height: 200px;
+    resize: none;
+    outline: solid 1px black;
+    border: 2px solid #06503c;
+}
+
+.identifier{
+    margin-bottom: 8px; 
+}
+
+.button{
+    width: 200px;
+    height: 50px;
+    background-color: #2fca64;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    margin-left: 75px;
+    margin-top: 40px;
+    border: none;
+}
+
+.button:hover{
+    width: 200px;
+    height: 50px;
+    background-color: #06503c;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    transition-duration: 250ms;
+    transition-property: background-color;
+}
+
+.textinput{
+    height: 50px;
+    width: 490px;
+}
+.textinput:focus{
+    height: 50px;
+    width: 490px;
+    outline: solid 1px black;
+    border-radius: 5px;
+}
+
+
+
+.contactpage{
+    padding-top: 5px;
+    background-color: #f9f9f9;
+    background-size: cover;
+    margin-top: 60px;
+    font-size: 15px;
+    padding-bottom: 60px;
+}
+
+input{
+    border:2px solid #1c1c80;
+    border-radius: 5px;
+}
+
+.send{
+    padding: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer{
+    background-color: #1c1c80;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.footbutton{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+.footbutton:hover{
+    text-decoration: underline;
+}
