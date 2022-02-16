@@ -6,46 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rapport de stage</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Mon rapport de stage sur l'entreprise Zimages">
 </head>
 <body>
     <header class="header">
         <a href="#default"><img src="images/index.png" class="logo"></a>
         <ul class="header-right">
-          <a class="active" href="#histoire">L'histoire</a>
-          <a href="#metier">Les métiers</a>
-          <a href="#projets">Les projets</a>
-          <a href="#contact">Contact</a>
+          <a class="headbutton" href="#histoire">L'histoire</a>
+          <a class="headbutton" href="#metier">Les métiers</a>
+          <a class="headbutton" href="#projets">Les projets</a>
+          <a class="headbutton" href="#contact">Contact</a>
         </ul>
         <img class="burger" src="images/menu.png" alt="burger">
-          <ul class="sous">
-            <li><a class="active" href="#histoire">L'histoire</a></li>
-            <li><a href="#metier">Les métiers</a></li>
-            <li><a href="#projets">Les projets</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
     </header> 
     <main>
       <!-- SUPPRIMER TOUT LES HR POUR UTILISER LES AFTERS QUI SONT PLUS ADAPTÉS -->
-      <!-- TROUVER LES DIV QUE L'ONT PEUT ELIMINER -->
+      <!-- TROUVER LES DIV QUE L'ONT PEUT ELIMINER-->
       <section>
         <div class="bannerimage">
           <h1 class="stage">RAPPORT DE STAGE</h1>
-          <hr class="bannerhr">
         </div>
+        </section>
+      <section class="flex">
         <p class="intropara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente distinctio, molestiae quibusdam ipsa praesentium perspiciatis corrupti impedit, excepturi fuga incidunt deserunt eveniet aspernatur, alias unde dolorum veniam velit architecto commodi?</p>
       </section>
       <section>
+        <div class="storyText">
         <div class="section-title">
           <h2 id="histoire">L'histoire</h2>
-          <hr class="titlehr">
-          <br>
         </div>
           <p class="story">
             Zimages c'est une entreprise niortaise qui a plus de 30 ans d'expérience et pas la moindre ride ! Celle-ci propose des solutions à toutes les problématiques publicitaires de notre siècle en innovant constamment !
           </p>
-        
-
-        <div class="history">
+        </div>
+        <div class="schema">
           <div class="box">
             <div class="circle">
               <span>1990</span>
@@ -66,17 +60,14 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="flex">
         <div class="quotebox">
-          <div class="quotesizing">
-          <h2 class="quotetext">Pour ce qui est de l'avenir, il ne s'agit pas de le prévoir, mais de le rendre possible.</h2>
-          </div>
+          <p class="quotetext">Pour ce qui est de l'avenir, il ne s'agit pas de le prévoir, mais de le rendre possible.</p>
         </div>
       </section>
       <section>
         <div class="section-title">
           <h2 id="metier">Les métiers</h2>
-          <hr class="titlehr">
         </div>
         <div class="fichemetier">
             <img class="jobImage" src="images/devimg.jpg" alt="devimg">
@@ -113,13 +104,13 @@
         <div class="fichemetier2">
           <img class="jobImage2" src="images/designimg.jpg" alt="devimg">
           <div>
-            <h2 class="jobTitle">WEBDESIGNER</h2>
+            <h3 class="jobTitle">WEBDESIGNER</h3>
             <p class="jobDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ducimus, numquam officiis architecto nihil magnam voluptatibus quod blanditiis ipsam nostrum quam autem ratione sapiente harum tenetur quia vitae eveniet et, in, saepe dignissimos tempora optio earum! Culpa ea sed et nemo consectetur quasi modi consequatur. Placeat esse distinctio deserunt aut?</p>
 
 
             <div class="cqBox">
               <div class="cq">
-              <h3>Les compétences</h3>
+              <h4>Les compétences</h4>
                 <ul>
                   <li>Test1</li>
                   <li>Test2</li>
@@ -145,74 +136,66 @@
       <section>
         <div class="section-title">
           <h2 id="projets">Les projets</h2>
-          <hr class="titlehr">
         </div>
         <div class="imgGrid">
           <div class="projectbox">
             <img class="imgSize" src="images/testing.jpg" alt="affiche vaccin">
             <h3 class="projtext">Projet n°1</h3>
-            <hr class="projecthr">
           </div>
           <div class="projectbox">
             <img class="imgSize" src="images/testing.jpg" alt="affiche vaccin">
             <h3 class="projtext">Projet n°2</h3>
-            <hr class="projecthr">
           </div>
           <div class="projectbox">
             <img class="imgSize" src="images/testing.jpg" alt="affiche vaccin">
             <h3 class="projtext">Projet n°3</h3>
-            <hr class="projecthr">
           </div>
           <div class="projectbox">
             <img class="imgSize" src="images/testing.jpg"alt="affiche vaccin">
             <h3 class="projtext">Projet n°4</h3>
-            <hr class="projecthr">
           </div>
           <div class="projectbox">
             <img class="imgSize" src="images/testing.jpg" alt="affiche vaccin">
             <h3 class="projtext">Projet n°5</h3>
-            <hr class="projecthr">
           </div>
           <div class="projectbox">
             <img class="imgSize" src="images/testing.jpg" alt="affiche vaccin">
             <h3 class="projtext">Projet n°6</h3>
-            <hr class="projecthr">
           </div>
         </div>
       </section>
       <section>
         <!-- ENTOURER LE FORMULAIRE DANS UNE BALISE <form> ET REMPLACER LES P PAR DES LABEL  -->
-        <div class="contactpage">
+        <form class="contactpage">
           <div class="section-title">
             <h2 id="contact">Contact</h2>
-            <hr class="titlehr">
           </div>
           <div class="infoflex">
             <div class="infoGrid">
               <div class="lastname">
-                <p class="identifier">Nom</p>
+                <label class="identifier">Nom</label>
                 <input class="textinput" type="text">
               </div>
               <div class="name">
-                <p class="identifier">Prénom</p>
+                <label class="identifier">Prénom</label>
                 <input class="textinput" type="text">
               </div>
               <div class="mail">
-                <p class="identifier">Email</p>
-                <input class="textinput" type="text">
+                <label for="email "class="identifier">Email</label>
+                <input class="textinput" type="text" id="email">
               </div>
               <div class="phone">
-                <p class="identifier">Téléphone</p>
-                <input class="textinput"  type="text">
+                <label for="phone" class="identifier">Téléphone</label>
+                <input class="textinput"  type="text" id="phone">
               </div>
             </div>
           </div>
           <div class="message">
-            <p class="identifier">Message</p>
-            <textarea rows="2" cols="25"></textarea>
+            <label for="message" class="identifier">Message</label>
+            <textarea rows="2" cols="25" id="messsage"></textarea>
           </div>
           <input class="button" type="submit" value="Envoyer"> 
-        </div>
+        </form>
       </section>
     </main>
     <footer class="footer">
