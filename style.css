@@ -18,8 +18,6 @@ img {
 .fichemetier{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
     margin-bottom: 60px;
     flex-wrap: wrap-reverse;
 }
@@ -29,8 +27,8 @@ img {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap-reverse;
+    margin-bottom: 60px;
 }
 
 .jobDescription{
@@ -44,6 +42,7 @@ img {
 
     .fichemetier{
         justify-content: space-between;
+        flex-direction: row-reverse;
     }
 
     .fichemetier2{
@@ -61,6 +60,9 @@ img {
     display: flex;
     justify-content: space-between;
 }
+
+
+
 
 .burger{
     display: flex;
@@ -90,13 +92,13 @@ img {
 }
 
 
-
-
 @media (min-width: 900px) {
     .logo{
         padding-left: 50px;
 
     }
+
+
 
     .headbutton{
         background-image: linear-gradient(#2fca64, #2fca64);
@@ -104,13 +106,15 @@ img {
         background-position-y: 100%;
         background-repeat: no-repeat;
         transition: background-size 0.2s ease-in-out;
+        border-radius: 2px;
     }
 
     .headbutton:hover,
     .headbutton:focus,
     .headbutton:active {
     background-image: linear-gradient(#1c1c80, #1c1c80);
-    background-size: 100% 0.15em;
+    background-size: 100% 0.1em;
+    border-radius: 2px;
     }
 
     .headbutton{
@@ -139,15 +143,16 @@ img {
 
 
 .bannerimage {
+    filter: brightness(100%);
     width: 100%;
-    filter: brightness(97%);
-    background-image: url(images/banner3.png);
+    background-image: url(images/banner.png);
     height: 300px;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .footbutton{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -156,6 +161,14 @@ img {
     text-decoration: none;
     margin: 20px;
     align-items: center;
+}
+
+.copyright{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
 }
 
 .infoflex{
@@ -182,6 +195,12 @@ img {
     padding-bottom: 30px;
 }
 
+.cq{
+    display: inline-block;
+    width: auto;
+    margin-right: 50px;
+}
+
 @media (max-width: 553px) {
 
     .bannerimage{
@@ -206,6 +225,10 @@ img {
 
     .name{
         width: 100%;
+    }
+
+    .cq{
+        margin-right: 20px;
     }
 }
 
@@ -278,6 +301,12 @@ img {
     margin: 0;
     height: fit-content;
     padding: 20px 0;
+}
+
+.autor{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 .quotetext{
@@ -404,11 +433,7 @@ span{
     height: 200px;
 }
 
-.cq{
-    display: inline-block;
-    width: auto;
-    margin-right: 30px;
-}
+
 
 
 
@@ -458,18 +483,30 @@ ul {
     width: 350px;
     height: 350px;
     margin: 15px;
+    filter: brightness(80%);
+    transition: all 500ms ease-out;
+}
+
+.imgSize:hover{
+    filter: brightness(100%);
+
+
 }
 
 
 .projectbox{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .projtext{
     color: white;
-    position: absolute; bottom: 150px; left: 110px;
+    position: absolute;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 28px;
+    margin: 0;
 }
 
 .projtext::after{
@@ -509,17 +546,20 @@ textarea{
     width: 95%;
     height: 150px;
     resize: none;
-    border:0.5px solid #1c1c80;
+    border:2px;
     border-radius: 10px;
     justify-content: center;
     background-color: #fafafa;
-    box-shadow:0 0 5px rgba(0,0,0,0.3);
+    box-shadow:0 0 3px #1c1c80;
     transition: .3s box-shadow;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+
 textarea:focus{
-    outline: solid 1px #1c1c80;
+    background-color: white;
+    outline: none;
 }
 
 .identifier{
@@ -546,19 +586,20 @@ textarea:focus{
 }
 
 .textinput:focus{
-    outline: solid 1px #1c1c80;
+    background-color: white;
+    outline: none;
 }
 
 
 
 
 input{
-    border:0.5px solid #1c1c80;
+    border: 2px;
     border-radius: 10px;
     height: 50px;
     width: 100%;
     background-color: #fafafa;
-    box-shadow:0 0 5px rgba(0,0,0,0.3);
+    box-shadow:0 0 3px #1c1c80;
     transition: .3s box-shadow;
 }
 
