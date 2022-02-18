@@ -220,7 +220,7 @@ nav{
     margin-right: 50px;
 }
 
-@media (max-width: 776px) {
+@media (max-width: 900px) {
 
     .sidenav {
         height: 100%;
