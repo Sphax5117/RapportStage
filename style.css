@@ -35,9 +35,11 @@ img {
     width: auto;
 }
 
+
 .close{
     display: none;
 }
+
 
 @media (min-width:1200px){
     .container{
@@ -116,8 +118,6 @@ nav{
     #openBtn{
         display: none;
     }
-
-
 
     .headbutton{
         background-image: linear-gradient(#2fca64, #2fca64);
@@ -220,7 +220,10 @@ nav{
     margin-right: 50px;
 }
 
+
 @media (max-width: 900px) {
+
+
 
     .sidenav {
         height: 100%;
@@ -236,15 +239,19 @@ nav{
 
     .sidenav a {
         padding: 8px 8px 8px 32px;
+        width: fit-content;
         text-decoration: none;
         font-size: 20px;
         color: #4b4b4b;
         display: block;
         transition: 0.3s;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        cursor: pointer;
     }
 
     .sidenav a:hover {
         color: #111;
+        cursor: pointer;
     }
       
     .sidenav ul {
