@@ -577,12 +577,12 @@ textarea:focus{
     text-align: center;
     margin-top: 40px;
     border: none;
+    transition-duration: 250ms;
+    transition-property: background-color;
 }
 
 .button:hover{
-    background-color: #06503c;
-    transition-duration: 250ms;
-    transition-property: background-color;
+    background-color: #2a9650;
 }
 
 .textinput:focus{
