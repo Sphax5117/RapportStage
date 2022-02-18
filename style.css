@@ -61,12 +61,14 @@ img {
 .header {
     overflow: hidden;
     padding: 10px 10px;
+}
+
+
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 
 .burger{
@@ -226,17 +228,17 @@ img {
         position: fixed;
         z-index: 1;
         top: 0;
-        left: -250px;
-        background-color: #e8e8e8;
+        right: -250px;
+        background-color: #e8e8e8d2;
         padding-top: 60px;
-        transition: left 0.5s ease;
+        transition: right 0.5s ease;
       }
 
     .sidenav a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 25px;
-        color: #818181;
+        color: #4b4b4b;
         display: block;
         transition: 0.3s;
     }
@@ -252,7 +254,7 @@ img {
     }
 
     .sidenav.active {
-        left: 0;
+        right: 0;
       }
 
     .sidenav.close {
