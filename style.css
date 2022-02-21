@@ -2,10 +2,15 @@ html,body {
     margin:0;
     padding:0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 img {
     max-width: 100%;
     height: auto;
+}
+
+h2{
+    margin: 0;
 }
 
 .container {
@@ -220,10 +225,20 @@ nav{
     margin-right: 50px;
 }
 
+.experience{
+    width: 1000px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
 
 @media (max-width: 900px) {
 
 
+    .experience{
+        width: auto;
+    }
 
     .sidenav {
         height: 100%;
@@ -350,6 +365,9 @@ nav{
 .section-title{
    height: fit-content;
    font-size: 25px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin-top: 60px;
+   margin-bottom: 0;
 }
 
 .section-title::after{
@@ -365,11 +383,6 @@ nav{
     background: black;
 }
 
-
-#histoire{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: auto;
-}
 
 
 .story{
@@ -485,14 +498,6 @@ nav{
 
 
 
-#metier{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    margin-top: 60px;
-    margin-bottom: auto;
-}
-
-
 
 .jobTitle{
     margin-top: 20px;
@@ -541,12 +546,6 @@ ul {
     margin-left: -1em;
   }
 
-  #projets{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    margin-top: 60px;
-    margin-bottom: auto;
-}
 
 .imgGrid{
     display: flex;
@@ -599,11 +598,6 @@ ul {
     background: white;
 }
 
-#contact{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    margin: 0;
-}
 
 .contactpage .section-title{
     margin: 30px 0;
